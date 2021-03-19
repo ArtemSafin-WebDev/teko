@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TEKO</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://teko.biz/local/templates/teko_2018/tools/styles.css?161492985291647" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body style="overflow-y: scroll">
+        <section class="poll">
+            <div class="container">
+                <form action="/" method="POST" class="poll__form js-poll-form" data-need-validation>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="poll__form-step poll__form-step--with-min-height">
+                                    <div class="poll__form-step-content">
+                                        <h3 class="poll__form-step-heading">Вам нравится ТЕКО?</h3>
+                                        <div class="poll__form-likes">
+                                            <div class="poll__form-likes-item">
+                                                <label class="poll__form-likes-checkbox">
+                                                    <input type="radio" name="like" value="1" class="poll__form-likes-checkbox-input" checked />
+                                                    <span class="poll__form-likes-checkbox-mark"> </span>
+                                                    <span class="poll__form-likes-checkbox-text"> Нравится </span>
+                                                </label>
+                                                <div class="poll__form-likes-progress">
+                                                    <div class="poll__form-likes-progress-bar" style="--likes: 85%">
+                                                        <div class="poll__form-likes-progress-bar-percentage">85%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="poll__form-likes-item">
+                                                <label class="poll__form-likes-checkbox">
+                                                    <input type="radio" name="like" value="2" class="poll__form-likes-checkbox-input" />
+                                                    <span class="poll__form-likes-checkbox-mark"> </span>
+                                                    <span class="poll__form-likes-checkbox-text"> Не нравится </span>
+                                                </label>
+                                                <div class="poll__form-likes-progress">
+                                                    <div class="poll__form-likes-progress-bar" style="--likes: 7%">
+                                                        <div class="poll__form-likes-progress-bar-percentage">7%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="poll__form-likes-item">
+                                                <label class="poll__form-likes-checkbox">
+                                                    <input type="radio" name="like" value="3" class="poll__form-likes-checkbox-input" />
+                                                    <span class="poll__form-likes-checkbox-mark"> </span>
+                                                    <span class="poll__form-likes-checkbox-text"> Все равно </span>
+                                                </label>
+                                                <div class="poll__form-likes-progress">
+                                                    <div class="poll__form-likes-progress-bar" style="--likes: 8%">
+                                                        <div class="poll__form-likes-progress-bar-percentage">8%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="poll__form-step-controls">
+                                        <a href="#" class="poll__form-step-next">
+                                            Далее
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.6 16.8">
+                                                <path d="M0,14.4l6-6-6-6L1.2,0,9.6,8.4,1.2,16.8Z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="poll__form-step">
+                                    <div class="poll__form-step-content">
+                                        <div class="poll__form-product">
+                                            <h3 class="poll__form-step-heading">Оставьте свой отзыв о продукте:</h3>
+                                            <div class="poll__form-products">
+                                                <label class="poll__form-product">
+                                                    <input type="radio" name="product" value="1" class="poll__form-product-checkbox-input" checked />
+                                                    <span class="poll__form-product-checkbox-content">
+                                                        <span class="poll__form-product-checkbox-content-text"> Астра-А </span>
+                                                        <img src="img/products/1.png" alt="" class="poll__form-product-checkbox-content-image" />
+                                                    </span>
+                                                </label>
+                                                <label class="poll__form-product">
+                                                    <input type="radio" name="product" value="1" class="poll__form-product-checkbox-input" />
+                                                    <span class="poll__form-product-checkbox-content">
+                                                        <span class="poll__form-product-checkbox-content-text">
+                                                            Астра-<br />
+                                                            Zитадель
+                                                        </span>
+                                                        <img src="img/products/2.png" alt="" class="poll__form-product-checkbox-content-image" />
+                                                    </span>
+                                                </label>
+                                                <label class="poll__form-product">
+                                                    <input type="radio" name="product" value="1" class="poll__form-product-checkbox-input" />
+                                                    <span class="poll__form-product-checkbox-content">
+                                                        <span class="poll__form-product-checkbox-content-text">
+                                                            Охранная<br />
+                                                            сигнализация
+                                                        </span>
+                                                        <img src="img/products/3.png" alt="" class="poll__form-product-checkbox-content-image" />
+                                                    </span>
+                                                </label>
+                                                <label class="poll__form-product">
+                                                    <input type="radio" name="product" value="1" class="poll__form-product-checkbox-input" />
+                                                    <span class="poll__form-product-checkbox-content">
+                                                        <span class="poll__form-product-checkbox-content-text"> ПАК Астра </span>
+                                                        <img src="img/products/4.png" alt="" class="poll__form-product-checkbox-content-image" />
+                                                    </span>
+                                                </label>
+                                                <label class="poll__form-product">
+                                                    <input type="radio" name="product" value="1" class="poll__form-product-checkbox-input" />
+                                                    <span class="poll__form-product-checkbox-content">
+                                                        <span class="poll__form-product-checkbox-content-text"> Астра&#8209;РИ&#8209;М </span>
+                                                        <img src="img/products/5.png" alt="" class="poll__form-product-checkbox-content-image" />
+                                                    </span>
+                                                </label>
+                                                <label class="poll__form-product">
+                                                    <input type="radio" name="product" value="1" class="poll__form-product-checkbox-input" />
+                                                    <span class="poll__form-product-checkbox-content">
+                                                        <span class="poll__form-product-checkbox-content-text"> Астра-Y </span>
+                                                        <img src="img/products/6.png" alt="" class="poll__form-product-checkbox-content-image" />
+                                                    </span>
+                                                </label>
+                                                <label class="poll__form-product">
+                                                    <input type="radio" name="product" value="1" class="poll__form-product-checkbox-input" />
+                                                    <span class="poll__form-product-checkbox-content">
+                                                        <span class="poll__form-product-checkbox-content-text">
+                                                            Security<br />
+                                                            Hub
+                                                        </span>
+                                                        <img src="img/products/7.png" alt="" class="poll__form-product-checkbox-content-image" />
+                                                    </span>
+                                                </label>
+                                                <label class="poll__form-product">
+                                                    <input type="radio" name="product" value="1" class="poll__form-product-checkbox-input" />
+                                                    <span class="poll__form-product-checkbox-content">
+                                                        <span class="poll__form-product-checkbox-content-text"> Извещатели </span>
+                                                        <img src="img/products/8.png" alt="" class="poll__form-product-checkbox-content-image" />
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="poll__form-model">
+                                            <h3 class="poll__form-step-heading">Выберите модель:</h3>
+                                            <div class="poll__form-model-items">
+                                                <label class="poll__form-model-checkbox">
+                                                    <input type="radio" name="model" value="1" class="poll__form-model-checkbox-input" checked />
+                                                    <span class="poll__form-model-checkbox-content">
+                                                        <span class="poll__form-model-checkbox-image-container">
+                                                            <img src="img/models/1.jpg" alt="" class="poll__form-model-checkbox-image" />
+                                                        </span>
+                                                        <span class="poll__form-model-checkbox-title" data-text="Модель1"> Модель1 </span>
+                                                    </span>
+                                                </label>
+                                                <label class="poll__form-model-checkbox">
+                                                    <input type="radio" name="model" value="2" class="poll__form-model-checkbox-input" />
+                                                    <span class="poll__form-model-checkbox-content">
+                                                        <span class="poll__form-model-checkbox-image-container">
+                                                            <img src="img/models/2.jpg" alt="" class="poll__form-model-checkbox-image" />
+                                                        </span>
+                                                        <span class="poll__form-model-checkbox-title" data-text="Модель2"> Модель2 </span>
+                                                    </span>
+                                                </label>
+                                                <label class="poll__form-model-checkbox">
+                                                    <input type="radio" name="model" value="3" class="poll__form-model-checkbox-input" />
+                                                    <span class="poll__form-model-checkbox-content">
+                                                        <span class="poll__form-model-checkbox-image-container">
+                                                            <img src="img/models/2.jpg" alt="" class="poll__form-model-checkbox-image" />
+                                                        </span>
+                                                        <span class="poll__form-model-checkbox-title" data-text="Модель3"> Модель3 </span>
+                                                    </span>
+                                                </label>
+                                                <label class="poll__form-model-checkbox">
+                                                    <input type="radio" name="model" value="4" class="poll__form-model-checkbox-input" />
+                                                    <span class="poll__form-model-checkbox-content">
+                                                        <span class="poll__form-model-checkbox-image-container">
+                                                            <img src="img/models/3.jpg" alt="" class="poll__form-model-checkbox-image" />
+                                                        </span>
+                                                        <span class="poll__form-model-checkbox-title" data-text="Модель4"> Модель4 </span>
+                                                    </span>
+                                                </label>
+                                                <label class="poll__form-model-checkbox">
+                                                    <input type="radio" name="model" value="5" class="poll__form-model-checkbox-input" />
+                                                    <span class="poll__form-model-checkbox-content">
+                                                        <span class="poll__form-model-checkbox-image-container">
+                                                            <img src="img/models/3.jpg" alt="" class="poll__form-model-checkbox-image" />
+                                                        </span>
+                                                        <span class="poll__form-model-checkbox-title" data-text="Модель5"> Модель5 </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="poll__form-service">
+                                            <h3 class="poll__form-step-heading">Оставьте свой отзыв о сервисе:</h3>
+                                            <div class="poll__form-services">
+                                                <label class="poll__form-service-checkbox">
+                                                    <input type="radio" name="service" value="1" class="poll__form-service-checkbox-input" checked />
+                                                    <span class="poll__form-service-checkbox-content">
+                                                        <span class="poll__form-service-checkbox-content-text">
+                                                            Отдел<br />
+                                                            продаж</span
+                                                        >
+                                                        <img src="img/service/1.svg" alt="" class="poll__form-service-checkbox-content-image" />
+                                                    </span>
+                                                </label>
+                                                <label class="poll__form-service-checkbox">
+                                                    <input type="radio" name="service" value="1" class="poll__form-service-checkbox-input" />
+                                                    <span class="poll__form-service-checkbox-content">
+                                                        <span class="poll__form-service-checkbox-content-text">
+                                                            Техническая<br />
+                                                            поддержка</span
+                                                        >
+                                                        <img src="img/service/2.svg" alt="" class="poll__form-service-checkbox-content-image" />
+                                                    </span>
+                                                </label>
+                                                <label class="poll__form-service-checkbox">
+                                                    <input type="radio" name="service" value="1" class="poll__form-service-checkbox-input" />
+                                                    <span class="poll__form-service-checkbox-content">
+                                                        <span class="poll__form-service-checkbox-content-text">
+                                                            Гарантийная<br />
+                                                            служба</span
+                                                        >
+                                                        <img src="img/service/3.svg" alt="" class="poll__form-service-checkbox-content-image" />
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="poll__form-step-controls">
+                                        <a href="#" class="poll__form-step-prev">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.6 16.8">
+                                                <path d="M9.6,2.4l-6,6,6,6L8.4,16.8,0,8.4,8.4,0Z" />
+                                            </svg>
+                                            Назад
+                                        </a>
+                                        <a href="#" class="poll__form-step-next">
+                                            Далее
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.6 16.8">
+                                                <path d="M0,14.4l6-6-6-6L1.2,0,9.6,8.4,1.2,16.8Z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="poll__form-step">
+                                    <div class="poll__form-step-content">
+                                        <div class="poll__form-tell-me">
+                                            <h3 class="poll__form-step-heading">Расскажите о своем товаре:</h3>
+                                            <div class="poll__form-tell-me-row">
+                                                <div class="poll__form-tell-me-left-col">
+                                                    <div class="poll__form-tell-me-image-container">
+                                                        <img src="img/models/1.jpg" alt="" class="poll__form-tell-me-image" />
+                                                    </div>
+                                                    <h4 class="poll__form-tell-me-model-name"></h4>
+                                                </div>
+                                                <div class="poll__form-tell-me-right-col">
+                                                    <div class="poll__form-tell-me-rating">
+                                                        <h4 class="poll__form-tell-me-rating-heading">Общая оценка: <sup> * </sup></h4>
+                                                        <input type="hidden" name="rating" value="1" class="poll__form-tell-me-rating-input" />
+                                                        <div class="poll__form-tell-me-rating-stars">
+                                                            <a href="#" class="poll__form-tell-me-rating-star">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 39">
+                                                                    <path
+                                                                        d="M20.5,0l4.83,14.86H41L28.31,24l4.83,14.85L20.5,29.71,7.86,38.89,12.69,24,.05,14.86H15.67Z"
+                                                                    />
+                                                                </svg>
+                                                            </a>
+                                                            <a href="#" class="poll__form-tell-me-rating-star">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 39">
+                                                                    <path
+                                                                        d="M20.5,0l4.83,14.86H41L28.31,24l4.83,14.85L20.5,29.71,7.86,38.89,12.69,24,.05,14.86H15.67Z"
+                                                                    />
+                                                                </svg>
+                                                            </a>
+                                                            <a href="#" class="poll__form-tell-me-rating-star">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 39">
+                                                                    <path
+                                                                        d="M20.5,0l4.83,14.86H41L28.31,24l4.83,14.85L20.5,29.71,7.86,38.89,12.69,24,.05,14.86H15.67Z"
+                                                                    />
+                                                                </svg>
+                                                            </a>
+                                                            <a href="#" class="poll__form-tell-me-rating-star">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 39">
+                                                                    <path
+                                                                        d="M20.5,0l4.83,14.86H41L28.31,24l4.83,14.85L20.5,29.71,7.86,38.89,12.69,24,.05,14.86H15.67Z"
+                                                                    />
+                                                                </svg>
+                                                            </a>
+                                                            <a href="#" class="poll__form-tell-me-rating-star">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 39">
+                                                                    <path
+                                                                        d="M20.5,0l4.83,14.86H41L28.31,24l4.83,14.85L20.5,29.71,7.86,38.89,12.69,24,.05,14.86H15.67Z"
+                                                                    />
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                        <div class="poll__form-tell-me-rating-text">
+                                                            <p>Щелкни, чтобы оценить</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="poll__form-tell-me-review-info">
+                                                        <div
+                                                            class="poll__form-tell-me-review-info-input-wrapper poll__form-tell-me-review-info-input-wrapper--fullwidth"
+                                                        >
+                                                            <input
+                                                                type="text"
+                                                                name="title"
+                                                                class="poll__form-tell-me-review-info-input poll__form-tell-me-review-info-input--large-text"
+                                                                placeholder="Заголовок отзыва"
+                                                            />
+                                                        </div>
+                                                        <div
+                                                            class="poll__form-tell-me-review-info-input-wrapper poll__form-tell-me-review-info-input-wrapper--fullwidth"
+                                                        >
+                                                            <textarea
+                                                                name="comment"
+                                                                class="poll__form-tell-me-review-info-input"
+                                                                placeholder="Опишите, что вы думаете о своем новом продукте: что понравилось больше всего, что хотелось бы улучшить... "
+                                                            ></textarea>
+                                                        </div>
+                                                        <div class="poll__form-tell-me-upload js-file-upload">
+                                                            <h4 class="poll__form-tell-me-upload-heading">Прикрепите видео или фото товара</h4>
+                                                            <label class="poll__form-tell-me-upload-file">
+                                                                <input
+                                                                    type="file"
+                                                                    accept="video/*,image/*"
+                                                                    class="poll__form-tell-me-upload-file-input"
+                                                                />
+
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.33 36.67">
+                                                                    <path
+                                                                        d="M15.83,8.33V27.5a6.67,6.67,0,1,1-13.33,0V6.67a4.17,4.17,0,1,1,8.33,0v17.5a1.67,1.67,0,0,1-3.33,0V8.33H5V24.17a4.17,4.17,0,0,0,8.33,0V6.67A6.67,6.67,0,1,0,0,6.67V27.5a9.17,9.17,0,1,0,18.33,0V8.33Z"
+                                                                    />
+                                                                </svg>
+                                                                <span class="poll__form-tell-me-upload-file-name js-file-upload-text">
+                                                                    Прикрепить файл
+                                                                </span>
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="poll__form-tell-me-review-info-input-wrapper">
+                                                            <input
+                                                                type="text"
+                                                                name="name"
+                                                                class="poll__form-tell-me-review-info-input"
+                                                                placeholder="Ваше имя:"
+                                                                required
+                                                            />
+                                                        </div>
+                                                        <div class="poll__form-tell-me-review-info-input-wrapper">
+                                                            <input
+                                                                type="tel"
+                                                                name="phone"
+                                                                class="poll__form-tell-me-review-info-input js-phone-input"
+                                                                placeholder="Ваш телефон:"
+                                                                required
+                                                                data-parsley-phone
+                                                            />
+                                                        </div>
+
+                                                        <div class="poll__form-tell-me-review-info-input-wrapper">
+                                                            <input
+                                                                type="email"
+                                                                name="email"
+                                                                class="poll__form-tell-me-review-info-input"
+                                                                placeholder="Электронная почта:"
+                                                                required
+                                                            />
+                                                        </div>
+
+                                                        <div class="poll__form-tell-me-review-info-policy">
+                                                            <label class="poll__form-tell-me-review-info-policy-checkbox">
+                                                                <input
+                                                                    type="checkbox"
+                                                                    name="policy"
+                                                                    class="poll__form-tell-me-review-info-policy-checkbox-input"
+                                                                    required
+                                                                />
+                                                                <span class="poll__form-tell-me-review-info-policy-checkbox-mark"> </span>
+                                                                <span class="poll__form-tell-me-review-info-policy-checkbox-text">
+                                                                    Согласие с политикой конфиденциальности и<br />
+                                                                    условиями обработки персональных данных
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="poll__form-step-controls">
+                                        <a href="#" class="poll__form-step-prev">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.6 16.8">
+                                                <path d="M9.6,2.4l-6,6,6,6L8.4,16.8,0,8.4,8.4,0Z" />
+                                            </svg>
+                                            Назад
+                                        </a>
+                                        <button type="submit" class="poll__form-step-next">Отправить отзыв</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="poll__form-step">
+                                    <div class="poll__form-success">
+                                        <h3 class="poll__form-success-heading">
+                                            Благодарим вас за<br />
+                                            оставленный отзыв!
+                                        </h3>
+                                        <a href="#" class="poll__form-success-ok"> ОК </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="inputmask.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"
+            integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ=="
+            crossorigin="anonymous"
+        ></script>
+        <script src="app.js"></script>
+    </body>
+</html>
